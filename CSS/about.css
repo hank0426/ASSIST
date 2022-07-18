@@ -1,0 +1,52 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC&display=swap');
+body{
+    font-family: Arial, 'Noto Sans TC', sans-serif; 
+    line-height: 1.6;
+}
+
+.bread{
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px 1px #d9d9d9;
+    padding: 10px 0;
+}
+.bread p{
+    font-size: 16px;
+    color: black;
+    padding-left: 140px;
+}
+
+.pic img{
+    width: 800px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 20px;
+}
+
+.container{
+    width: 800px;
+    box-sizing: border;
+    margin: 0 auto 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about_word{
+    width: 600px;
+}
+
+.about_word h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+.about_word p{
+    font-size: 16px;
+    margin: 20px 30px 20px 0;
+}
+
+.about_logo img{
+    display: block;
+    width: 200px;
+}

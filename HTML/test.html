@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/test.css">
+</head>
+<body>
+  <!-- 商品 -->
+  <div class="product_wrapper">
+    <!-- 左側選單 -->
+    <div class="product_category_wrapper">
+        <i class="fas fa-times"></i>
+        <span>商品分類</span>
+        <ul class="main_category">
+            <li>郵票</li>
+            <li>紙幣</li>
+            <li>硬幣</li>
+        </ul>
+        <div class="filter_wrapper">
+            <div class="filter_title">
+                <span>國家</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <form action="#">
+                <label>
+                    <input type="checkbox" name="cuntury" value="運動">
+                    <span>台灣</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="cuntury" value="運動">
+                    <span>中國</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="cuntury" value="運動">
+                    <span>日本</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="cuntury" value="運動">
+                    <span>其他</span>
+                </label>
+            </form>
+        </div>
+        <div class="filter_wrapper">
+            <div class="filter_title">
+                <span>新舊程度</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <form action="#">
+                <label>
+                    <input type="checkbox" name="cuntury" value="運動">
+                    <span>全新</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="cuntury" value="運動">
+                    <span>九成新以上</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="cuntury" value="運動">
+                    <span>八成新以上</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="cuntury" value="運動">
+                    <span>八成新以下</span>
+                </label>
+            </form>
+        </div>
+    </div>
+
+    <!-- 商品 -->
+    <div class="product_content_wrapper">
+        <div class="sort_mode">
+            <span>排序方式</span>
+            <i class="fas fa-chevron-up"></i>
+            <div class="sort_down">
+                <button>最新</button>
+                <button>價格:由高到低</button>
+                <button>價格:由低到高</button>
+            </div>
+        </div>
+        <button class="filter-btn">
+           <span>篩選</span>
+            <i class="fas fa-filter"></i>
+        </button>
+
+</body>
