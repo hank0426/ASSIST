@@ -5,17 +5,6 @@ body{
     line-height: 1.6;
 }
 
-.bread{
-    box-sizing: border-box;
-    box-shadow: 1px 1px 1px 1px #d9d9d9;
-    padding: 10px 0;
-}
-.bread p{
-    font-size: 16px;
-    color: black;
-    padding-left: 140px;    
-}
-
 h1{
     font-size: 30px;
     color: black;
@@ -36,4 +25,33 @@ h1{
     width: 800px;
     margin-bottom: 20px;
     border-radius: 20px;
+}
+
+/*-------------------- 414 ---------------------*/
+@media screen and (max-width: 415px) {
+    
+    h1{
+        font-size: 24px;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .container{
+        max-width: 414px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .container img{
+        max-width: 414px;
+        width: 100%;
+        display: block;
+        margin-bottom: 0px;
+        border-radius: 0px;
+    }
+
 }

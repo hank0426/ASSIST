@@ -5,17 +5,6 @@ body{
     line-height: 1.6;
 }
 
-.bread{
-    box-sizing: border-box;
-    box-shadow: 1px 1px 1px 1px #d9d9d9;
-    padding: 10px 0;
-}
-.bread p{
-    font-size: 16px;
-    color: black;
-    padding-left: 140px;    
-}
-
 h1{
     font-size: 30px;
     color: black;
@@ -62,6 +51,7 @@ h1{
     font-size: 16px;
     line-height: 1.2;
     padding: 10px 0;
+    height: 50px;
 }
 
 .container a h3{
@@ -76,4 +66,26 @@ h1{
     font-size: 16px;
     text-shadow: 1px 1px 1px black;
     text-align: center;
+}
+
+/*-------------------- 414 ---------------------*/
+@media screen and (max-width:415px){
+    .month{
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    .container{
+        width: 90%;
+        max-width: 414px;
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        /* margin: 0 auto; */
+        font-weight: bold;
+        padding-bottom: 50px;
+    }
 }

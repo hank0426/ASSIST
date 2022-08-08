@@ -5,17 +5,6 @@ body{
     line-height: 1.6;
 }
 
-.bread{
-    box-sizing: border-box;
-    box-shadow: 1px 1px 1px 1px #d9d9d9;
-    padding: 10px 0;
-}
-.bread p{
-    font-size: 16px;
-    color: black;
-    padding-left: 140px;
-}
-
 h1{
     font-size: 30px;
     color: black;
@@ -41,9 +30,48 @@ h1{
     margin: 20px 0;
 }
 
-.container p{
+.container li{
     width: 800px;
     font-size: 16px;
     color: black;
     margin-bottom: 10px;
+}
+
+/*-------------------- 414 ---------------------*/
+@media screen and (max-width:415px){
+    body{
+        width: 100%;
+        max-width: 414px;
+    }
+
+    h1{
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .container{
+        max-width: 414px;
+        box-sizing: border;
+        margin: 0 auto 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container h2{
+        width: 100px;
+        font-size: 20px;
+        /* margin: 20px auto; */
+        text-align: center;
+    }
+
+    .container li{
+        width: 90%;
+        font-size: 16px;
+        color: black;
+        margin: 0 auto 10px;
+        padding-bottom: 10px;
+        letter-spacing: 2px;
+    }
+
 }

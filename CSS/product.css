@@ -1,0 +1,457 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC&display=swap');
+body{
+    font-family: Arial, 'Noto Sans TC', sans-serif; 
+    line-height: 1.6;
+}
+
+.main{
+    display: block;
+}
+
+.product-container{
+    width: 100%;
+    padding-top: 30px;
+}
+.productintro{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+/* 左側圖片 */
+.product-gallery{
+    width: 600px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+.product-image img{
+    height: 600px;
+}
+
+.image-item img{
+    height: 100px;
+    margin: 10px;
+}
+
+.image-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* 右側商品內容 */
+
+.productinfo{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 10px;
+}
+
+h3, h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.options{
+    width: 700px;
+    margin-top: 30px;
+}
+
+.select-count{
+    display: flex;
+}
+
+#size{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-right: 250px;
+    margin-bottom: 20px;
+}
+
+.count{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.count span{
+    font-size: 16px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #F46424;
+    color: white;
+    font-weight: bold;
+    margin: 0 15px;
+
+    /* 更換游標 */
+    cursor: pointer;
+
+    /* 取消反白 */
+    user-select: none;
+}
+
+.count input{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 0px;
+}
+
+.follow{
+    width: 300px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #F46424;
+    color: white;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.add-to-cart{
+    width: 300px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #F46424;
+    color: white;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.social{
+    width: 300px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #F46424;
+    color: white;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.options button:hover{
+    background-color: darkred;
+}
+
+h5{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.index-products{
+    max-width: 1440px;
+    display: flex;
+    justify-content:space-around;
+    margin: 0 auto;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.index-products a{
+    display: block;
+    text-decoration: none;
+    width: 300px;
+    margin: 20px;
+}
+
+.index-products a img{
+    width: 250px;
+    height: 250px;
+    vertical-align: top;
+}
+
+.index-products a h2{
+    color: black;
+    font-size: 16px;
+    line-height: 1.2;
+    padding: 10px 0;
+    height: 50px;
+}
+
+.index-products a h3{
+    color: red;
+    font-size: 16px;
+    line-height: 1.2;
+    padding: 10px 0;
+}
+
+.index-products .main_arrow{
+    text-align: center;
+    align-self: center;
+    font-size: 30px;
+    color: black;
+}
+
+.index-products .main_arrow:hover{
+    color: #F46424;
+}
+
+/*-------------------- 414 ---------------------*/
+@media screen and (max-width: 415px){
+    body{
+        font-family: Arial, 'Noto Sans TC', sans-serif; 
+        line-height: 1;
+    }
+    .main{
+        display: block;
+        
+    }
+    
+    .product-container{
+        width: 100%;
+        padding-top: 0px;
+    }
+    .productintro{
+        max-width: 414px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    /* 左側圖片 */
+    .product-gallery{
+        width: 200px;
+        margin-right: 0px;
+        cursor: pointer;
+        display: flex;
+    }
+    .product-image img{
+        height: 250px;
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+    
+    .image-item img{
+        height: 50px;
+        margin: 10px;
+    }
+    
+    .image-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    
+    /* 右側商品內容 */
+    
+    .productinfo{
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    
+    .description{  
+        height: 345px;
+        
+    }
+    h1{
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+    
+    h2{
+        font-size: 16px;
+        font-weight: bold;
+        color: red;
+        margin-bottom: 0px;
+    }
+    
+    h3, h4{
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+    
+    p{
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+    
+    .options{
+        width: 414px;
+        margin-top: 0px;
+        margin: 0 auto;
+    }
+    
+    .select-count{
+        display: flex;
+        
+        margin: 0 auto;
+    }
+    
+    #size{
+        width: 150px;
+        height: 50px;
+        font-size: 16px;
+        padding-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .count{
+        display: flex;
+        align-items: center;
+        margin-bottom: 0px;
+        margin: 0 auto;
+    }
+    
+    .count span{
+        font-size: 12px;
+        border: 1px solid black;
+        padding: 0px;
+        background-color: #F46424;
+        color: white;
+        font-weight: bold;
+        margin: 10 auto;
+    
+        /* 更換游標 */
+        cursor: pointer;
+    
+        /* 取消反白 */
+        user-select: none;
+    }
+    
+    .count input{
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        font-size: 16px;
+        border: 1px solid black;
+        border-radius: 0px;
+    }
+    
+    .follow{
+        width: 150px;
+        height: 50px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #F46424;
+        color: white;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        cursor: pointer;
+        border: none;
+    }
+    
+    .add-to-cart{
+        width: 150px;
+        height: 50px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #F46424;
+        color: white;
+        margin-bottom: 0px;
+        cursor: pointer;
+        border: none;
+    }
+    .select{
+        margin: 0 auto;
+    }
+    .social{
+        width: 150px;
+        height: 50px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #F46424;
+        color: white;
+        margin-bottom: 0px;
+        cursor: pointer;
+        border: none;
+    }
+    
+    .options button:hover{
+        background-color: darkred;
+    }
+    
+    h5{
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        margin: 10px auto;
+    }
+    
+    .index-products{
+        max-width: 414px;
+        display: flex;
+        flex-direction: ;
+        flex-wrap: wrap;
+        justify-content:;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+
+    .index-products a{
+        display: block;
+        text-decoration: none;
+        width: 150px;
+        margin: 10px;
+    }
+
+    .index-products a img{
+        width: 150px;
+        height: 150px;
+        vertical-align: top;
+    }
+
+    .index-products a h2{
+        width: 150px;
+        color: black;
+        font-size: 14px;
+        line-height: 1.2;
+        padding: 10px 0;
+        height: 50px;
+    }
+
+    .index-products a h3{
+        color: red;
+        font-size: 14px;
+        line-height: 1.2;
+        padding: 10px 0;
+    }
+
+    .index-products .main_arrow{
+        text-align: center;
+        align-self: center;
+        font-size: 30px;
+        color: black;
+        display: none;
+    }
+
+    .index-products .main_arrow:hover{
+        color: #F46424;
+    }
+}

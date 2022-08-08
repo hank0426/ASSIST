@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>商品專區｜ASSIST籃球專門店</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="../CSS/header_footer.css">
+    <link rel="stylesheet" href="../CSS/header_bread_footer.css">
     <link rel="stylesheet" href="../CSS/allproducts.css">
 </head>
 <body>
     <!-- 頁首 -->
     <header class="header">
-        <div class="logo-section">
-            <a href="index.html">
-                <img src="../picture/Logo/logo-white.png" alt="">            
-        </div>
-        <!-- 主選單 -->
         <div class="nav">
+            <div class="logo-section">
+                <a href="index.html">
+                    <img src="../picture/Logo/logo-white.png" alt="">
+            </div>
+            <div class="hamBar_wrapper">
+                <a class="hamBar" href="#">
+                <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+            <!-- 主選單 -->
             <ul class="menu">
                 <li><a href="about.html">關於我們</a></li>
                 <li class="product">
@@ -75,19 +80,24 @@
                 <li><a href="notice.html">購物須知</a></li>
                 <li><a href="contact.html">聯絡我們</a></li>
             </ul>
-        </div>
-        <div class="list">
-            <ul class="iconlist">
-                <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li><input type="search" placeholder="搜尋..."></li>
-            </ul>
+            <div class="list">
+                <ul class="iconlist">
+                    <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><input type="search" placeholder="搜尋..."></li>
+                </ul>
+            </div>
         </div>
     </header>
     <!-- 目錄 -->
-    <div class="bread">
-        <p>首頁>商品專區</p> 
+    <div class="breadcrumblist">
+        <div class="breadcontainer">
+          <ol class="breadcrumb">
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="allproducts.html">商品專區</a></li>
+          </ol>
+        </div>
     </div>
     <!-- 主內容 -->
     <section class="main">
@@ -254,64 +264,95 @@
                 </div>
             </div>
         
-            <!-- 商品 -->
+            <!-- 右側商品 -->
             <div class="product_content_wrapper">
                 <!-- <div class="sort_mode">
-                    <span>排序方式</span>
-                    <i class="fas fa-chevron-down"></i>
-                    <div class="sort_down">
-                        <button>最新</button>
-                        <button>價格:由高到低</button>
-                        <button>價格:由低到高</button>
-                    </div>
-                </div> -->
-                <a href="#">
-                    <img src="../picture/Product/AJ13.jpg">
-                    <h2>Nike Air Jordan 13 Retro</h2>
-                    <h3>NT$6800</h3>
-                </a>
-                <a href="#">
-                    <img src="../picture/Product/Jordan Diamond low-1.jpg">
-                    <h2>Nike Jordan Jumpman Diamond Low PF</h2>
-                    <h3>NT$3800</h3>
-                </a>
-                <a href="#">
-                    <img src="../picture/Product/KI7.jpg">
-                    <h2>Nike Kyrie 7</h2>
-                    <h3>NT$4000</h3>
-                </a>
-                <a href="#">
-                    <img src="../picture/Product/UA Curry 7.jpg">
-                    <h2>Under Armour Curry 7</h2>
-                    <h3>NT$5200</h3>
-                </a>
-                <a href="#">
-                    <img src="../picture/Product/AJ12.jpg">
-                    <h2>Nike Air Jordan 12 Retro Gym Red</h2>
-                    <h3>NT$6800</h3>
-                </a>
-                <a href="#">
-                    <img src="../picture/Product/Nike Freak 1.jpg">
-                    <h2>Nike Zoom Freak 1</h2>
-                    <h3>NT$3800</h3>
-                </a>
-                <a href="#">
-                    <img src="../picture/Product/LBJ 16 low.jpg">
-                    <h2>Nike LeBron 16 Low</h2>
-                    <h3>NT$5200</h3>
-                </a>
-                <a href="#">
-                    <img src="../picture/Product/AJ1.jpg">
-                    <h2>Nike Air Jodran 1 Retro High</h2>
-                    <h3>NT$5800</h3>
-                </a>
-                <a href="#">
-                    <img src="../picture/Product/Adidas shoes.jpg">
-                    <h2>Adidas Basketball Shoes</h2>
-                    <h3>NT$2400</h3>
-                </a>
-            </div>
-        </div>   
+                        <span>排序方式</span>
+                        <i class="fas fa-chevron-down"></i>
+                        <div class="sort_down">
+                            <button>最新</button>
+                            <button>價格:由高到低</button>
+                            <button>價格:由低到高</button>
+                        </div>
+                    </div> -->
+                <ul class="product_content">
+                    <li>
+                        <a href="#">
+                            <img src="../picture/Product/AJ13.jpg">
+                            <h2>Nike Air Jordan 13 Retro</h2>
+                            <h3>NT$6800</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="product.html">
+                            <img src="../picture/Product/Jordan Diamond low-1.jpg">
+                            <h2>Nike Jordan Jumpman Diamond Low PF</h2>
+                            <h3>NT$3800</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../picture/Product/KI7.jpg">
+                            <h2>Nike Kyrie 7</h2>
+                            <h3>NT$4000</h3>
+                        </a>
+                    </li>    
+                    <li>
+                        <a href="#">
+                            <img src="../picture/Product/UA Curry 7.jpg">
+                            <h2>Under Armour Curry 7</h2>
+                            <h3>NT$5200</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../picture/Product/AJ12.jpg">
+                            <h2>Nike Air Jordan 12 Retro Gym Red</h2>
+                            <h3>NT$6800</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../picture/Product/Nike Freak 1.jpg">
+                            <h2>Nike Zoom Freak 1</h2>
+                            <h3>NT$3800</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../picture/Product/LBJ 16 low.jpg">
+                            <h2>Nike LeBron 16 Low</h2>
+                            <h3>NT$5200</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../picture/Product/AJ1.jpg">
+                            <h2>Nike Air Jodran 1 Retro High</h2>
+                            <h3>NT$5800</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../picture/Product/Adidas shoes.jpg">
+                            <h2>Adidas Basketball Shoes</h2>
+                            <h3>NT$2400</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>    
+        </div>
+        <ul class="page">
+            <li><a href="#">«</a></li>
+            <li><a class="active" href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">»</a></li>
+        </ul>   
     </section>
     <!-- 頁尾 -->
     <footer class="footer">
@@ -333,9 +374,6 @@
                 <h3><a href="#">商品專區</a></h3>
                 <h3><a href="#">主題活動</a></h3>
             </div>
-            <div class="footer-logo">
-                <img src="../picture/Logo/logo-white.png" alt="">
-            </div>
             <div class="footer-item">   
                 <h3><a href="#">即將上市</a></h3>
                 <h3><a href="#">購物須知</a></h3>
@@ -349,10 +387,13 @@
                 <a href=""><i class="fa-brands fa-instagram"></i></a>
                 <a href=""><i class="fa-brands fa-line"></i></a>
             </div>
+            <div class="footer-logo">
+                <img src="../picture/Logo/logo-white.png" alt="">
+            </div>
         </div>
         <div class="footer-copyright">
             <p>Copyright © 2022 ASSIST籃球專門店 ALL RIGHTS RESERVED</p>
-            <p>本網站為緯育TibaMe前端工程師班第78期學員專題作品，本平台僅供學習、展示之用。參考資源: Resource列表。</p>
+            <p>本網站為緯育TibaMe前端工程師班第78期學員專題作品，本平台僅供學習、展示之用。<a href="https://tinyurl.com/29qgk3vl" target="_blank">參考資源</a></p>
         </div>
     </footer>
 </body>

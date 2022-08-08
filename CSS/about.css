@@ -5,22 +5,11 @@ body{
     line-height: 1.6;
 }
 
-.bread{
-    box-sizing: border-box;
-    box-shadow: 1px 1px 1px 1px #d9d9d9;
-    padding: 10px 0;
-}
-.bread p{
-    font-size: 16px;
-    color: black;
-    padding-left: 140px;
-}
-
 .pic img{
     width: 800px;
     display: block;
     margin: 30px auto;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .container{
@@ -49,4 +38,41 @@ body{
 .about_logo img{
     display: block;
     width: 200px;
+}
+
+/*-------------------- 414 ---------------------*/
+@media screen and (max-width: 415px){
+    
+    .pic img{
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .container{
+        flex-direction: column;
+        width: auto;
+    }
+
+    .about_word{
+        width: auto;
+        padding: 15px;
+    }
+
+    .about_word h2{
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    .about_word p{
+        font-size: 15px;
+        margin: 5px;
+        margin-top: 5px;
+    }
+
+    .about_logo img{
+        width: 200px;
+        margin-top: 20px;
+
+    }
+
 }

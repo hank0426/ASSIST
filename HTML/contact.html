@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>聯絡我們｜ASSIST籃球專門店</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="../CSS/header_footer.css">
+    <link rel="stylesheet" href="../CSS/header_bread_footer.css">
     <link rel="stylesheet" href="../CSS/contact.css">
 </head>
 <body>
     <!-- 頁首 -->
     <header class="header">
-        <div class="logo-section">
-            <a href="index.html">
-                <img src="../picture/Logo/logo-white.png" alt="">            
-        </div>
-        <!-- 主選單 -->
         <div class="nav">
+            <div class="logo-section">
+                <a href="index.html">
+                    <img src="../picture/Logo/logo-white.png" alt="">
+            </div>
+            <div class="hamBar_wrapper">
+                <a class="hamBar" href="#">
+                <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+            <!-- 主選單 -->
             <ul class="menu">
                 <li><a href="about.html">關於我們</a></li>
                 <li class="product">
@@ -75,19 +80,24 @@
                 <li><a href="notice.html">購物須知</a></li>
                 <li><a href="contact.html">聯絡我們</a></li>
             </ul>
-        </div>
-        <div class="list">
-            <ul class="iconlist">
-                <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li><input type="search" placeholder="搜尋..."></li>
-            </ul>
+            <div class="list">
+                <ul class="iconlist">
+                    <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><input type="search" placeholder="搜尋..."></li>
+                </ul>
+            </div>
         </div>
     </header>
     <!-- 目錄 -->
-    <div class="bread">
-        <p>首頁>聯絡我們</p> 
+    <div class="breadcrumblist">
+        <div class="breadcontainer">
+          <ol class="breadcrumb">
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="contact.html">聯絡我們</a></li>
+          </ol>
+        </div>
     </div>
     <!-- 主內容 -->
     <section class="main">
@@ -135,9 +145,6 @@
                 <h3><a href="#">商品專區</a></h3>
                 <h3><a href="#">主題活動</a></h3>
             </div>
-            <div class="footer-logo">
-                <img src="../picture/Logo/logo-white.png" alt="">
-            </div>
             <div class="footer-item">   
                 <h3><a href="#">即將上市</a></h3>
                 <h3><a href="#">購物須知</a></h3>
@@ -151,10 +158,13 @@
                 <a href=""><i class="fa-brands fa-instagram"></i></a>
                 <a href=""><i class="fa-brands fa-line"></i></a>
             </div>
+            <div class="footer-logo">
+                <img src="../picture/Logo/logo-white.png" alt="">
+            </div>
         </div>
         <div class="footer-copyright">
             <p>Copyright © 2022 ASSIST籃球專門店 ALL RIGHTS RESERVED</p>
-            <p>本網站為緯育TibaMe前端工程師班第78期學員專題作品，本平台僅供學習、展示之用。參考資源: Resource列表。</p>
+            <p>本網站為緯育TibaMe前端工程師班第78期學員專題作品，本平台僅供學習、展示之用。<a href="https://tinyurl.com/29qgk3vl" target="_blank">參考資源</a></p>
         </div>
     </footer>
 </body>

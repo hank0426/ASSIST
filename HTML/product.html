@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASSIST籃球專門店</title>
+    <title>商品頁｜ASSIST籃球專門店</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/header_bread_footer.css">
+    <link rel="stylesheet" href="../CSS/product.css">
 </head>
 <body>
     <!-- 頁首 -->
@@ -89,88 +90,93 @@
             </div>
         </div>
     </header>
-    <!-- Banner -->
-    <section class="Banner">
-        <div class="container">
-            <div class="slider_wrap">
-                <div class="slider">
-                    <div class="slide first_img"></div>
-                    <div class="slide sec_img"></div>
-                    <div class="slide third_img"></div>
-                    <div class="slide fourth_img"></div>
-                    <div class="slide first_img"></div>
+    <!-- 目錄 -->
+    <div class="breadcrumblist">
+        <div class="breadcontainer">
+        <ol class="breadcrumb">
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="allproducts.html">商品專區</a></li>
+            <li><a href="product.html">商品頁</a></li>
+        </ol>
+        </div>
+    </div>
+    <!-- 主內容 -->
+    <section class="main">
+        <div class="product-container">
+            <div class="productintro">
+                <!-- 左側圖片區 -->
+                <div class="product-gallery">
+                    <div class="product-image">
+                      <img class="active" src="../picture/Product/Jordan Diamond low-1.jpg">
+                    </div>
+                    <ul class="image-list">
+                      <li class="image-item"><img src="../picture/Product/Jordan Diamond low-2.jpg"></li>
+                      <li class="image-item"><img src="../picture/Product/Jordan Diamond low-3.jpg"></li>
+                      <li class="image-item"><img src="../picture/Product/Jordan Diamond low-4.jpg"></li>
+                      <li class="image-item"><img src="../picture/Product/Jordan Diamond low-5.jpg"></li>
+                      <li class="image-item"><img src="../picture/Product/Jordan Diamond low-6.jpg"></li>
+                      <li class="image-item"><img src="../picture/Product/Jordan Diamond low-7.jpg"></li>
+                    </ul>
+                </div>
+                <!-- 右側商品資訊 -->
+                <div class="productinfo">
+                    <div class="description">
+                        <h1>Nike Jordan Jumpman Diamond Low PF</h1>
+                        <h2>NT$3800</h2>
+                        <h3>商品型號：CI1209-101</h3>
+                        <h4>商品描述：</h4>
+                        <p>從三分線到籃下，一路自信進攻。 這雙 Air Jordan 史上最輕的比賽鞋款，採用極簡卻耐久的羅織鞋面，搭配硬質塑膠細節強化結構。 除此之外，Zoom Air 緩震機能可發揮能量回傳效果，打造優異靈敏度。 比賽分秒必爭，現在有雙好鞋可以為你撐腰。<br><br>
+                            舉步輕盈，動能強勁
+                            <br><br>
+                            足部正下方的全掌式 Zoom Air Strobel 氣墊直接與鞋面縫合，可大幅減輕鞋重。 搭配前足底下能有效回傳能量的 Zoom Air 氣墊，讓運球時的腳感更加靈敏。
+                            <br><br>
+                            穩步飛躍
+                            <br><br>
+                            加高鞋領和頂部孔眼設計，實現空手跑位或飛身跳投所需的側向穩定性。
+                            <br><br>
+                            閃電疾速
+                            <br><br>
+                            多向性外底樣式，為隨時急停起步和疾速移動的球員提供抓地力。
+                            <br><br>
+                            原產國/地區：越南
+                        </p>
+                    </div>
+                    <div class="options">
+                        <div class="select-count">
+                            <div class="select">
+                                <select id="size">
+                                    <option value = "1">US9(27cm)</option>
+                                    <option value = "2">US9.5(27.5cm)</option>
+                                    <option value = "3">US10(28cm)</option>
+                                    <option value = "4">US10.5(28.5cm)</option>
+                                    <option value = "5">US11(29cm)</option>
+                                    <option value = "6">US12(30cm)</option>
+                                </select>
+                            </div>
+                            <div class="count">
+                                <div class="btn1">
+                                    <span class="subtract" id="subtract">–</span>
+                                </div>
+                                <input type="text" class="input_num" id="input_num" value="1">
+                                <div class="btn2">
+                                    <span class="plus" id="plus">+</span>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="follow-cart">
+                            <button class="follow">加入追蹤清單<i class="fa-solid fa-star"></i></button>
+                            <button class="add-to-cart">加入購物車<i class="fa fa-shopping-cart fa-lg"></i></button>
+                        </div>
+                        <div class="social">
+                            <button class="social">分享至社群
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- <div class="banner-leftarrow">
-                <a href="">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </a>
-            </div>
-            <div class="banner-rightarrow">
-                <a href="">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </a>
-            </div> -->
         </div>
-    </section>
-    <!-- 主內容 -->
-    <section class="index-main1">
-        <div class="main1">
-            <div class="main1_item">
-                <a href="#">
-                    <img src="../picture/men.jpg">
-                </a>
-            </div>
-            <div class="main1_item">
-                <a href="#">
-                    <img src="../picture/women.jpg">
-                </a>
-            </div>
-            <div class="main1_item">
-                <a href="#">
-                    <img src="../picture/kids.jpg">
-                </a>
-            </div>
-            <div class="main1_item">
-                <a href="#">
-                    <img src="../picture/equipment.jpg">
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="index-main2">
-        <h1>熱門商品</h1>
-        <div class="index-products">
-            <a href="#" class="main_arrow">
-                <i class="fa-solid fa-circle-chevron-left"></i>
-            </a>
-            <a href="#">
-                <img src="../picture/Product/KOBE jersey.jpg">
-                <h2>Adidas Kobe Bryant Authentic jersey Los Angeles Lakers</h2>
-                <h3>NT$15000</h3>
-            </a>
-            <a href="#">
-                <img src="../picture/Product/Jordan Diamond low-1.jpg">
-                <h2>Nike Jordan Jumpman Diamond Low PF</h2>
-                <h3>NT$3800</h3>
-            </a>
-            <a href="#">
-                <img src="../picture/Product/New Balance X-90.jpg">
-                <h2>New Balance X90 Series MSX90-RMN</h2>
-                <h3>NT$3600</h3>
-            </a>
-            <a href="#">
-                <img src="../picture/Product/Vans Oldskool.jpg">
-                <h2>Vans Old Skool V36CF SUEDE</h2>
-                <h3>NT$2800</h3>
-            </a>
-            <a href="#" class="main_arrow">
-                <i class="fa-solid fa-circle-chevron-right"></i>
-            </a>
-        </div>
-    </section>
-    <section class="index-main3">
-        <h1>最新商品</h1>
+        <h5>您可能也會喜歡</h5>
         <div class="index-products">
             <a href="#" class="main_arrow">
                 <i class="fa-solid fa-circle-chevron-left"></i>
@@ -197,29 +203,6 @@
             </a>
             <a href="#" class="main_arrow">
                 <i class="fa-solid fa-circle-chevron-right"></i>
-            </a>
-        </div>
-    </section>
-    <section class="index-main4">
-        <h1>即將上市</h1>
-        <div class="index-launch">
-            <a href="#">
-                <img src="../picture/Product/Coverse x CDG.jpg">
-                <h2>COMME des GARÇONS PLAY x Converse Chuck Taylor All Star '70</h2>
-                <h3>NT$4800</h3>
-                <h4>2022.07.19</h4>
-            </a>
-            <a href="#">
-                <img src="../picture/Product/AF1 x Carhartt.jpg">
-                <h2>Nike Air Force 1 Low Carhartt WIP Ale Brown</h2>
-                <h3>NT$5000</h3>
-                <h4>2022.07.19</h4>
-            </a>
-            <a href="#">
-                <img src="../picture/Product/NB shoes.jpg">
-                <h2>New Balance 997H</h2>
-                <h3>NT$3200</h3>
-                <h4>2022.07.19</h4>
             </a>
         </div>
     </section>
@@ -265,5 +248,50 @@
             <p>本網站為緯育TibaMe前端工程師班第78期學員專題作品，本平台僅供學習、展示之用。<a href="https://tinyurl.com/29qgk3vl" target="_blank">參考資源</a></p>
         </div>
     </footer>
+
+    <script>
+    const activeImage = document.querySelector(".product-image .active");
+    const productImages = document.querySelectorAll(".image-list img");
+  
+    function changeImage(e) {
+    activeImage.src = e.target.src;
+    }
+    
+    productImages.forEach(image => image.addEventListener("click", changeImage));
+
+    let  btn1 = document.getElementsByClassName('btn1')[0];
+       btn1.addEventListener('click', function(e){
+        let input_num = document.getElementById('input_num')
+        console.log(input_num);
+        let one = 1
+        let count =  input_num.value
+        count = count -  one
+
+        console.log(count);
+        
+        input_num.value = count
+        console.log(typeof(count));
+        
+        if( input_num.value < 1){
+            input_num.value = 0
+        }
+        console.log(input_num.value);
+
+    })
+
+    let  btn2 = document.getElementsByClassName('btn2')[0];
+        btn2.addEventListener('click', function(e){
+        let input_num = document.getElementById('input_num')
+        // console.log(input_num);
+        let one = 1
+        let count =  Number(input_num.value)
+        count = count +  one
+
+        // console.log(count);
+        
+        input_num.value = count
+        // console.log(typeof(count));
+    })
+    </script>
 </body>
 </html>

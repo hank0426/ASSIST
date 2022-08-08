@@ -5,17 +5,6 @@ body{
     line-height: 1.6;
 }
 
-.bread{
-    box-sizing: border-box;
-    box-shadow: 1px 1px 1px 1px #d9d9d9;
-    padding: 10px 0;
-}
-.bread p{
-    font-size: 16px;
-    color: black;
-    padding-left: 140px;
-}
-
 h1{
     font-size: 30px;
     color: black;
@@ -29,7 +18,6 @@ h1{
     margin: 0 auto;
     background-color: #d9d9d9;
     padding: 50px;
-    border-radius: 10px;
     margin-bottom: 50px;
 }
 
@@ -66,3 +54,65 @@ h1{
 	display: block;
 	margin: 0 auto;
 }    
+
+/*-------------------- 414 ---------------------*/
+@media screen and (max-width: 415px) {
+    h1{
+        font-size: 24px;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    .the_form{
+        max-width: 414px;
+        width: 380px;
+        margin: 0 auto;
+        background-color: #d9d9d9;
+        padding: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    
+    .contact_all label{
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .infos{
+        width: 80%;
+        height: 30px;
+        font-size:16px;
+    }
+    
+    .notes{
+        width: 80%;
+        height: 200px;
+        font-size:16px;
+    }
+    
+    .item_block{
+        padding-top: 20px;
+        margin-bottom: 30px;
+    }
+    .send{
+        width: 100px;
+        line-height: 1.6;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: #F46424;
+        color: white;
+        border: 0;
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto ;
+    } 
+    .submit{
+        padding-bottom: 20px
+    } 
+    .item_block:nth-child(4){
+        margin-bottom: 10px;
+    }
+}
