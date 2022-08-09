@@ -17,13 +17,8 @@
                 <a href="index.html">
                     <img src="../picture/Logo/logo-white.png" alt="">
             </div>
-            <div class="hamBar_wrapper">
-                <a class="hamBar" href="#">
-                <i class="fa-solid fa-bars"></i>
-                </a>
-            </div>
             <!-- 主選單 -->
-            <ul class="menu">
+            <ul class="menu" id="menu">
                 <li><a href="about.html">關於我們</a></li>
                 <li class="product">
                     <a href="allproducts.html">商品專區</a>
@@ -84,9 +79,12 @@
                 <ul class="iconlist">
                     <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
                     <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><input type="search" placeholder="搜尋..."></li>
+                    <li><a id="search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li id="searchInput"><a><input type="search" placeholder="搜尋..." ></a></li>
                 </ul>
+            </div>
+            <div class="nav-header-bars" id="bars">
+                <a id="navBar"><i class="fa-solid fa-bars"></i></a>
             </div>
         </div>
     </header>
@@ -150,5 +148,32 @@
             <p>本網站為緯育TibaMe前端工程師班第78期學員專題作品，本平台僅供學習、展示之用。<a href="https://tinyurl.com/29qgk3vl" target="_blank">參考資源</a></p>
         </div>
     </footer>
+    <script>
+        let bars = document.getElementById('bars')
+        bars.addEventListener('click', function(){
+            let menu = document.getElementById('menu')
+            if(menu.style.display === 'block'){
+                menu.style.display = 'none';
+            }else{
+                menu.style.display = 'block';
+            }
+            console.log(menu);
+            console.log('123');
+        })
+    </script>
+    <script>
+        let search = document.getElementById('search')
+        console.log(search);
+        search.addEventListener('click', function(){
+            let searchInput = document.getElementById('searchInput')
+            if(searchInput.style.display === 'block'){
+                searchInput.style.display = 'none';
+            }else{
+                searchInput.style.display = 'block';
+            }
+            console.log('123');
+            console.log(searchInput);
+        })
+    </script>
 </body>
 </html>

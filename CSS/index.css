@@ -28,17 +28,6 @@ body{
     padding-top: 10px;
 }
 
-.hamBar_wrapper{
-    display: none;
-    width: 50px;
-    height: 50px;
-}
-
-.hamBar {
-    display: block;
-    color: white;
-}
-
 .menu{
     max-width: 1200px;
     line-height: 60px;
@@ -440,154 +429,161 @@ h4{
 
 /*-------------------- 414 ---------------------*/
 @media screen and (max-width: 415px){
-    .header{
-        background-color: black;
-        max-width: 414px;
-        width: 100%;
-        height: 60px;
-        position: sticky;
-        top: 0;
-        z-index: 100;
-    }
-    
-    .nav{
-        max-width: 414px;
-        width: 100%;
-        height: 50px;
-        position: relative;
-        margin: 0 auto;
-    }
-    
-    .logo-section img{
-        height: 40px;
-        display: block;
-        padding-left: 20px;
-    }
+    /* 頁首 */
+.header{
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    position: relative;
+}
 
-    .hamBar_wrapper{
-        display: block;
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        right: 0;
-        top: 15px;
-        text-align: center;
-    }
+.nav{
+    max-width: 414px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.logo-section img{
+    height: 80px;
+    display: block;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.menu{
+
+    background-color: black;
+    opacity: 0.7;
+    max-width: 414px;
+    width: 414px;
+    line-height: 60px;
+    padding: 0px 0px 0 0px;
+    font-size: 20px;
+    box-sizing: border-box;
+    color: white;
+    display: none;
+    position: absolute;
+    top: 100%;
     
-    .hamBar i{
-        font-weight: bold;
-        line-height: 2;
-        padding-right: 20px;
-    }
+} 
+.nav-header-bars{
+    max-width: 30px;
+    align-items: center;
+    padding-right:20px;
+    padding-top: 50px;
     
-    .hamBar:hover ~ menu{
-        display: block;
-    }
+}
+
+.nav-header-bars a{
+    color: white;
+    display: block;
+}
+
+
+.menu li{
+    margin: 0 0px;
+    text-align: center;
+}
+
+.menu li a{
+    display: block;
+    text-decoration: none;
+	color: white;
+	font-weight: bold;
+   
+}
+
+.menu li a:hover{
+    background-color: white;
+    color: black;
+    text-shadow: 3px 3px 3px #F46424 ;
+    font-weight: bold;
+}
+
+.product{
+    position: relative;
+}
+.list{
+    margin-left: 0px;
+}
+
+.iconlist{
+    display: flex;
+    padding-top: 36px;
+    padding-right: 0px;
+    padding-left: 0px;
+    line-height: 60px;
     
-    .menu{
-        max-width: 414px;
-        font-size: 14px;
-        box-sizing: border-box;
-        color: black;
-        /* display: none; */
-        margin: 0 auto;
-        position: absolute;
-        right: 0;
-        top: 50px;
-        width: 100%;
-        /* background-color: white; */
-        display: flex;
-        flex-direction: column;
-    } 
-    
-    .menu li{
-        margin: 0 ;
-        text-align: center;
-    }
-    
-    .menu li a{
-        display: block;
-        text-decoration: none;
-        
-        font-weight: bold;
-       
-    }
-    
-    /* .menu li a:hover{
-        background-color: white;
-        color: black;
-      
-        font-weight: bold;
-    } */
-    
-    .product{
-        position: relative;
-    }
-    
-    .iconlist{
-        display: none;
-        padding-top: 40px;
-        padding-right: 50px;
-        line-height: 60px;
-    }
-    
-    .iconlist li a{
-        margin-right: 15px;
-        color: white;
-        font-size: 20px;
-    }
-    
-    .iconlist li a:hover{
-        color: #F46424;
-    }
-    .iconlist li input{
-        width: 120px;
-        height: 20px;
-        border: none;
-        outline: none;
-        border-radius: 10px;
-    }
-    /* 導覽次選單 */
-    .menu .product:hover .submenu {
-        /* 滑鼠滑入展開次選單*/
-        display: flex;
-    }
-    
-    .submenu{
-        display: none;
-        box-shadow: 1px 1px 1px 1px #c5c2c2;
-        background-color: white;
-        width: 900px;
-        position: absolute;   
-        left: -250px;
-        padding: 20px;
-        line-height: 2;
-        justify-content: space-between;
-    }
-    
-    .submenu ul .title a{
-        display: block;
-        font-size: 20px;
-        font-weight: bold;
-        color: #F46424;
-        margin-bottom: 10px;
-    }
-    
-    .submenu .title a:hover{
-        text-shadow: none ;
-        border-bottom: 2px solid #F46424;
-    }
-    
-    .submenu li a{
-        font-size: 16px;
-        color: black;
-    }
-    
-    .submenu .sub-li a:hover{
-        color: black;
-        text-shadow: none ;
-        border-bottom: 2px solid #F46424;
-    }
+
+}
+.list .iconlist li:nth-child(4){
+    display: none;
+}
+
+
+.iconlist li a{
+    margin-right: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+.iconlist li a:hover{
+    color: #F46424;
+}
+.iconlist li input{
+    width: 120px;
+    height: 20px;
+    border: none;
+	outline: none;
+    border-radius: 10px;
+}
+/* 導覽次選單 */
+.menu .product .submenu {
+    /* 滑鼠滑入展開次選單*/
+    display: none;
+}
+
+.submenu{
+    display: none;
+    box-shadow: 1px 1px 1px 1px #c5c2c2;
+    background-color: white;
+    width: 414px;
+    position: absolute;   
+    left: 0px;
+    padding: 0px;
+    line-height: 2;
+    justify-content: space-between;
+}
+
+.submenu ul .title a{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #F46424;
+    margin-bottom: 10px;
+}
+
+.submenu .title a:hover{
+    text-shadow: none ;
+    border-bottom: 2px solid #F46424;
+}
+
+.submenu li a{
+    font-size: 16px;
+	color: black;
+}
+
+.submenu .sub-li a:hover{
+    color: black;
+    text-shadow: none ;
+    border-bottom: 2px solid #F46424;
+}
 
     /* Banner */
     .slider_wrap .slider .slide.first_img {
